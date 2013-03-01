@@ -1,5 +1,8 @@
 SeventhmayCom::Application.routes.draw do
 
+  resources :apps
+
+
   root :to => 'home#index'
 
   # The priority is based upon order of creation:

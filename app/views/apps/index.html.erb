@@ -1,0 +1,9 @@
+<h4>my apps</h4>
+
+<% @apps.each do |app| %>
+  <ul>
+    <li><%= link_to app.name, app.url, :target => '_blank' %> <%= app.description %></li>
+  </ul>
+<% end %>
+
+
