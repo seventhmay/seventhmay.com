@@ -1,5 +1,11 @@
 SeventhmayCom::Application.routes.draw do
 
+  resources :links do
+    collection do
+      get 'live_search'
+    end
+  end
+
   resources :apps
 
 

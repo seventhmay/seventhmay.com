@@ -6,4 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-App.create(name: 'rss-maker', url: 'http://safe-forest-6846.herokuapp.com/feeds', description: 'Scraping html and serve as atom feed. Private.')
+#App.create(name: 'rss-maker', url: 'http://safe-forest-6846.herokuapp.com/feeds', description: 'Scraping html and serve as atom feed. Private.')
+
+Link.create(title: 'IFTTT', name: 'IFTTT', url: 'http://ifttt.com')
+Link.create(title: 'Github', name: 'Github', url: 'http://github.com')
+Link.create(title: 'Dropbox', name: 'Dropbox', url: 'http://dropbox.com')

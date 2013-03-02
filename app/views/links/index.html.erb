@@ -1,0 +1,27 @@
+<script type="text/javascript">
+  $(function() {
+      $("#search").keyup(function(){
+          var name = $("#search").val();
+          $.getJSON("links/live_search?name=" + name, function(data){
+                // li削除
+                $("#links > li").each(function(){
+                    $(this).remove();
+                });
+                // li追加
+                $.each(data, function(i, items){
+                    $("<li/>", { text: items.name }).appendTo('#links');
+                });
+          });
+      });
+  })
+</script>
+
+<div class='lead'>Listing links</div>
+
+<%= text_field_tag :search %>
+
+<ul id="links">
+<% @links.each do |link| %>
+  <li><%= link.name %> - <%= link.url %></li>
+<% end %>
+</ul>
