@@ -1,5 +1,5 @@
 class AppsController < ApplicationController
-  before_filter :authenticate
+  before_filter :authenticate, :except => [:index, :show]
 
   # GET /apps
   # GET /apps.json
