@@ -13,3 +13,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Setting Files.
+/config/application.yml
+/.rbenv-gemsets
+/.ruby-version
+
+# Ignore work files.
+/work
+
