@@ -20,9 +20,9 @@ $(function(){
             });
             // li追加
             $.each(data, function(i, items){
-                var link = $("<a/>", { href: items.url, text: items.title });
+                var link = $("<a/>", { target: "_blank", href: items.url, text: items.title });
+                //link.attr('target', '_blank');
                 var li = $("<li/>").append(link);
-                //li.append(link);
                 $('#links').append(li);
             });
       });
