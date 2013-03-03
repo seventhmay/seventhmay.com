@@ -20,7 +20,10 @@ $(function(){
             });
             // li追加
             $.each(data, function(i, items){
-                $("<li/>", { text: items.name }).appendTo('#links');
+                var link = $("<a/>", { href: items.url, text: items.title });
+                var li = $("<li/>").append(link);
+                //li.append(link);
+                $('#links').append(li);
             });
       });
   });

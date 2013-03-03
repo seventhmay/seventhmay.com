@@ -1,14 +1,10 @@
 class LinksController < ApplicationController
   before_filter :authenticate, :except => [:index, :show, :live_search]
 
-  def live_search
-    @links = Link.where('name LIKE ?', "%#{params[:name]}%").all
-    
-    render :json => @links
+  def live_search 
+    @links = Link.search(params[:name])
 
-    #respond_to do |format|
-      #format.json { render :json => @links }
-    #end
+    render :json => @links
   end
 
   # GET /links
