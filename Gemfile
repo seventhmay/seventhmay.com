@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'thin'
+
 gem 'settingslogic'
 gem 'twitter-bootstrap-rails'
 gem 'therubyracer', :platforms => :ruby
@@ -11,6 +13,8 @@ gem 'less-rails'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'spork-rails'
 end
 
 group :production do
