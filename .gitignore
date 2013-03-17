@@ -21,4 +21,5 @@
 
 # Ignore work files.
 /work
+/.env
 

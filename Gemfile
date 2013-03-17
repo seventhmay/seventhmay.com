@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', '3.2.12'
 gem 'thin'
+gem 'foreman'
 
 gem 'settingslogic'
 gem 'twitter-bootstrap-rails'
