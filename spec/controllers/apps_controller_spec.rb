@@ -22,4 +22,11 @@ describe AppsController do
       response.response_code.should == 401
     end
   end
+
+  describe 'responding to GET edit' do
+    it "should return 401 Not Authenticated" do
+      get :edit, :id => 1
+      response.response_code.should == 401
+    end
+  end
 end
