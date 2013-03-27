@@ -153,6 +153,7 @@ DEPENDENCIES
   newrelic_rpm
   pg
   rails (= 3.2.12)
+  rake
   rspec-rails
   sass-rails (~> 3.2.3)
   settingslogic
