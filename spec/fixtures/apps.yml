@@ -1,0 +1,11 @@
+one:
+  id: 1
+  name: 'app 1'
+  url: 'http://app1.com/'
+  description: 'description for app1.'
+
+two:
+  id: 2
+  name: 'app 2'
+  url: 'http://app2.com/'
+  description: 'description for app2.'
