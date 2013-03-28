@@ -1,4 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-script: bundle exec rake test
+before_script:
+  - "cp config/application.yml.sample config/application.yml"
+script: "RAILS_ENV=test bundle exec rake db:drop db:create db:migrate spec"
