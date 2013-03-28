@@ -22,4 +22,4 @@
 # Ignore work files.
 /work
 /.env
-
+.DS_Store

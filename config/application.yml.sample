@@ -1,7 +1,7 @@
 defaults: &defaults
   admin:
-    name: 'admin'
-    password: '6zzndyea'
+    name: 'name'
+    password: 'pass'
 
 development:
   <<: *defaults
