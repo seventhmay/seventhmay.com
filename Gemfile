@@ -15,6 +15,7 @@ gem 'less-rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
+  gem 'rake'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'spork-rails'

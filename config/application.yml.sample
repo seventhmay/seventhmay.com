@@ -1,0 +1,13 @@
+defaults: &defaults
+  admin:
+    name: 'admin'
+    password: '6zzndyea'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
